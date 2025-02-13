@@ -1,23 +1,24 @@
 const questions = [
     {
         images: [
-            { src: './images/1.png', type: 'ai' },  // 상대 경로 -> 절대 경로 변경
-            { src: './images/2.png', type: 'ai' },
-            { src: './images/3.png', type: 'human' },
-            { src: './images/4.png', type: 'ai' }
+            { src: 'images/1.png', type: 'ai' },  // 절대 경로 사용
+            { src: 'images/2.png', type: 'ai' },
+            { src: 'images/3.png', type: 'human' },
+            { src: 'images/4.png', type: 'ai' }
         ],
-        answer: './images/3.png'  // 정답 수정
+        answer: 'images/3.png'  // 정답 수정
     },
     {
         images: [
-            { src: './images/1.png', type: 'ai' },
-            { src: './images/2.png', type: 'human' },
-            { src: './images/3.png', type: 'ai' },
-            { src: './images/4.png', type: 'ai' }
+            { src: 'images/1.png', type: 'ai' },
+            { src: 'images/2.png', type: 'human' },
+            { src: 'images/3.png', type: 'ai' },
+            { src: 'images/4.png', type: 'ai' }
         ],
-        answer: './images/2.png'  // 정답 수정
+        answer: 'images/2.png'  // 정답 수정
     }
 ];
+
 
 let currentQuestionIndex = 0;
 
